@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 83px;
+}
+.Header .Logo {
+  width: 8%;
+  margin: auto 25px;
+}
+.Header .Logo img {
+  height: 30px;
+  width: 100px;
+}
+.Header .bullets {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+.Header .bullets a {
+  text-decoration-line: none;
+}
+.Header .bullets a li {
+  color: #555;
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.Header .social-media {
+  width: 15%;
+}
+.Header .social-media i {
+  margin-right: 20px;
+  color: #555;
+}
+
+.Main-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.Main-div .Description {
+  width: 86%;
+  margin: auto;
+  height: 200px;
+  padding-top: 154px;
+}
+.Main-div .Description h3 {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 0;
+}
+.Main-div .Description h1 {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+.Main-div .Description h2 {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 0.5;
+}
+.Main-div .Description a {
+  text-decoration-line: none;
+  border-bottom: 2px solid #333;
+  color: #333;
+  font-size: 26px;
+  line-height: 1.05;
+  margin-top: 40px;
+}
+
+.Portfolio .Desc {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.Portfolio .Desc h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.Portfolio .Desc p {
+  font-size: 14px;
+}
+.Portfolio .Main-card {
+  display: grid;
+  width: 87%;
+  height: 870px;
+  grid-template-columns: 33% 33% 33%;
+  margin: auto;
+}
+.Portfolio .Main-card .Cards {
+  position: relative;
+  width: 95%;
+}
+.Portfolio .Main-card .Cards img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.Portfolio .Main-card .Cards .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 61%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Portfolio .Main-card .Cards .middle h1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+  transform: translateY(-15px);
+  transition: all 0.3s ease 0s;
+}
+.Portfolio .Main-card .Cards .middle p {
+  color: #555;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1;
+  transform: translateY(-15px);
+  transition: all 0.3s ease 0s;
+}
+.Portfolio .Main-card .Cards:hover img {
+  opacity: 0.3;
+}
+.Portfolio .Main-card .Cards:hover .middle {
+  opacity: 1;
+}
+
+.Services {
+  width: 100%;
+  height: 490px;
+  padding-top: 40px;
+  padding-bottom: 234px;
+  background-color: #f9f9f9;
+  background-position-y: -100px;
+}
+.Services .Description {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.Services .Description h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.Services .Description p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.Services .Cardss {
+  height: 500px;
+  display: grid;
+  margin: auto;
+  width: 78%;
+  grid-template-columns: 50% 50%;
+}
+.Services .Cardss .Service-Text h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 1;
+}
+.Services .Cardss .Service-Text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Team .Team-Desc {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.Team .Team-Desc h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.Team .Team-Desc p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.Team .Team-cards {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.Team .Team-cards .Data {
+  position: relative;
+  width: 95%;
+}
+.Team .Team-cards .Data img {
+  opacity: 1;
+  display: block;
+  width: 93%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.Team .Team-cards .Data .content {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 92%;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.Team .Team-cards .Data .content h1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.Team .Team-cards .Data .content p {
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 31px;
+  margin: auto;
+  width: 200px;
+}
+.Team .Team-cards .Data .content .social {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px auto;
+  width: 35%;
+}
+.Team .Team-cards .Data:hover .content {
+  opacity: 1;
+}
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+.Contact .Form {
+  width: 50%;
+}
+.Contact .Form h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.Contact .Form input {
+  background-color: initial;
+  border: solid #dbdbdb;
+  border-width: 0 0 2px;
+  color: #555;
+  display: block;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  width: 90%;
+}
+.Contact .Form button {
+  background-color: initial;
+  border: none;
+  border-bottom: 2px solid #555;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  width: auto;
+}
+.Contact .Form .contact {
+  margin-top: 45px;
+}
+.Contact .Form .contact h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.Contact .Form .contact ul {
+  margin-left: -40px;
+}
+.Contact .Form .contact li {
+  color: #555;
+  font-size: 14px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.Contact .Form .contact li span {
+  color: #333;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.Contact .Location {
+  width: 31%;
+}
+.Contact .Location .Anytime h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.Contact .Location .Anytime p {
+  font-size: 14px;
+}
+.Contact .Location .Anytime iframe {
+  height: 230px !important;
+}/*# sourceMappingURL=style.css.map */
